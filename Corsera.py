@@ -6,7 +6,7 @@ import sklearn
 
 
 image = 'https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png'
-df = pd.read_csv("Course_rec_data_2.csv")
+df = pd.read_csv("course_rec_data_2.csv")
 del df['Unnamed: 0']
 knn_model = pickle.load(open("knn_model_coursera.pkl",'rb'))
 vectorizer= pickle.load(open("vetorizer.pkl",'rb'))
